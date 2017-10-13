@@ -4,7 +4,7 @@
 
 Follow these steps to install/build a umd bundle:
 
-1. `jspm install npm:babel-plugin-transform-decorators-legacy`
+1. `jspm install npm:babel-plugin-transform-decorators-legacy --peer`
 2. `jspm build babel-plugin-transform-decorators-legacy decorators.js`
 
 This creates a `decorators.js` file:
