@@ -1,10 +1,11 @@
 # How to create a Plnkr Bundle
-`jspm install npm:babel-plugin-transform-decorators-legacy`
-`jspm build babel-plugin-transform-decorators-legacy decorators.js`
+1. `jspm install npm:babel-plugin-transform-decorators-legacy`
+2. `jspm build babel-plugin-transform-decorators-legacy decorators.js`
 
 This creates a `decorators.js` file:
 
 Git commit and push to master, now you load this file from:
+
 [https://rawgit.com/eggheadio/plnkr-bundles/master/decorators.js](https://rawgit.com/eggheadio/plnkr-bundles/master/decorators.js)
 
 ## Usage:
