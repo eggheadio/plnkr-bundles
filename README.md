@@ -1,5 +1,6 @@
 # How to create a Plnkr Bundle
-First, `npm i -g jspm@beta`
+
+`npm i -g jspm@beta`
 
 Follow these steps to install/build a umd bundle:
 
