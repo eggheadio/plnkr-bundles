@@ -35,3 +35,9 @@ SystemJS.config({
 
 ## Why?
 Mainly because babel plugins/presets aren't bundled
+
+# ⚠️ Warning⚠️
+
+Plugins/presets/libs that depend on `process.env.FOO` (such as "babel-plugin-react-app") will break your browser build. Until
+we find a workaround/hack for injecting a `process`, just avoid
+them.
