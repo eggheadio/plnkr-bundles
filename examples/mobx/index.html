@@ -1,0 +1,35 @@
+<!doctype html>
+<meta charset="utf-8">
+<script src="https://unpkg.com/systemjs@0.20.17/dist/system.src.js"></script>
+
+<body>
+  <div id="app"></div>
+  <script type="text/javascript" charset="utf-8">
+    console.clear()
+  </script>
+  <script>
+    SystemJS.config({
+      map: {
+        "plugin-babel": "https://unpkg.com/systemjs-plugin-babel@0.0.25/plugin-babel.js",
+        "systemjs-babel-build": "https://unpkg.com/systemjs-plugin-babel@0.0.25/systemjs-babel-browser.js",
+        "babel-plugin-transform-decorators-legacy": "https://rawgit.com/eggheadio/plnkr-bundles/master/decorators.js",
+        "react": "https://unpkg.com/react@16.0.0/umd/react.development.js",
+        "react-dom": "https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js",
+        'mobx': 'https://unpkg.com/mobx@3.3.1/lib/mobx.js',
+        'mobx-react': 'https://unpkg.com/mobx-react@4.3.3/index.js'
+      },
+
+      transpiler: "plugin-babel",
+      meta: {
+        "*.js": {
+          esModule: true,
+          babelOptions: {
+            react: true,
+            plugins: ['babel-plugin-transform-decorators-legacy'],
+          }
+        }
+      }
+    })
+    SystemJS.import('index.js');
+  </script>
+</body>
