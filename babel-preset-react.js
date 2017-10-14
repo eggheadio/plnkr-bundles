@@ -10298,4 +10298,4 @@ $__System.registerDynamic("a", ["e", "fc", "fd", "ff"], true, function ($__requi
   else
     factory();
 });
-//# sourceMappingURL=react.js.map
+//# sourceMappingURL=babel-preset-react.js.map

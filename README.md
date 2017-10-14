@@ -11,21 +11,22 @@ This creates a `decorators.js` file:
 
 Git commit and push to master, now you load this file from:
 
-[https://rawgit.com/eggheadio/plnkr-bundles/master/decorators.js](https://rawgit.com/eggheadio/plnkr-bundles/master/decorators.js)
+[https://rawgit.com/eggheadio/plnkr-bundles/master/babel-plugin-transform-decorators-legacy.js](https://rawgit.com/eggheadio/plnkr-bundles/master/babel-plugin-transform-decorators-legacy.js)
 
 ## Usage:
 ```js
 SystemJS.config({
       map: {
-        "babel-plugin-transform-decorators-legacy": "https://rawgit.com/eggheadio/plnkr-bundles/master/decorators.js"     
+        "babel-preset-react": "https://rawgit.com/eggheadio/plnkr-bundles/master/babel-preset-react.js",
+        "babel-plugin-transform-decorators-legacy": "https://rawgit.com/eggheadio/plnkr-bundles/master/babel-plugin-transform-decorators-legacy.js"     
       },      
       transpiler: "plugin-babel",
       meta: {
         "*.js": {
           esModule: true,
           babelOptions: {
-            react: true,
-            plugins: ['babel-plugin-transform-decorators-legacy'],
+            presets: ["babel-preset-react"],
+            plugins: ["babel-plugin-transform-decorators-legacy"],
           }
         }
       }
