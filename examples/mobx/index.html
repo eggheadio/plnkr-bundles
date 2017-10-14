@@ -10,14 +10,14 @@
   <script>
     SystemJS.config({
       map: {
+        "plugin-babel": "https://unpkg.com/systemjs-plugin-babel@0.0.25/plugin-babel.js",
+        "systemjs-babel-build": "https://unpkg.com/systemjs-plugin-babel@0.0.25/systemjs-babel-browser.js",
         "babel-preset-react": "https://rawgit.com/eggheadio/plnkr-bundles/master/babel-preset-react.js",
         "babel-plugin-transform-decorators-legacy": "https://rawgit.com/eggheadio/plnkr-bundles/master/babel-plugin-transform-decorators-legacy.js",
-        "systemjs-babel-build": "https://unpkg.com/systemjs-plugin-babel@0.0.25/systemjs-babel-browser.js",
-        "babel-plugin-transform-decorators-legacy": "https://rawgit.com/eggheadio/plnkr-bundles/master/decorators.js",
         "react": "https://unpkg.com/react@16.0.0/umd/react.development.js",
         "react-dom": "https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js",
-        'mobx': 'https://unpkg.com/mobx@3.3.1/lib/mobx.js',
-        'mobx-react': 'https://unpkg.com/mobx-react@4.3.3/index.js'
+        "mobx": "https://unpkg.com/mobx@3.3.1/lib/mobx.js",
+        "mobx-react": "https://unpkg.com/mobx-react@4.3.3/index.js"
       },
 
       transpiler: "plugin-babel",
@@ -26,11 +26,11 @@
           esModule: true,
           babelOptions: {
             presets: ["babel-preset-react"],
-            plugins: ["babel-plugin-transform-decorators-legacy"],
+            plugins: ["babel-plugin-transform-decorators-legacy"]
           }
         }
       }
     })
-    SystemJS.import('index.js');
+    SystemJS.import("index.js");
   </script>
 </body>

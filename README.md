@@ -26,7 +26,7 @@ SystemJS.config({
           esModule: true,
           babelOptions: {
             presets: ["babel-preset-react"],
-            plugins: ["babel-plugin-transform-decorators-legacy"],
+            plugins: ["babel-plugin-transform-decorators-legacy"]
           }
         }
       }
